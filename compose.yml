@@ -1,0 +1,9 @@
+versão : ' 3.9 '
+serviços :
+  apache :
+    imagem : httpd:latest
+    container_name : my-apache-app
+    portas :
+    - '80 : 80 '
+    volumes :
+    - ./website:/usr/local/apache2/htdocs
